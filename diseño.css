@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
+/* Definir tipo de letra */
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Color de fondo */
 body {
     background: lightblue;
     display: flex;
@@ -14,7 +14,7 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-
+/* Asignar tamaño de contenedor, con el tamaño de 1fr y 2fr */
 .container {
     position: relative;
     width: 100%;
@@ -26,13 +26,13 @@ body {
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
-
+/* posicion relativa y el color de fondo */
 .container .left_side {
     position: relative;
     background: #003147;
     padding: 40px;
 }
-.profileText {
+ .profileText { /*texto en forma de columna */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -40,13 +40,15 @@ body {
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.profileText .imgBox {
+/*se redondea la imagen y cambia tamaño*/
+.profileText .imgBox { 
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
 }
+/* Asignar tamaño al nombre, se cambia a mayusculas */
 .profileText h2{
     color: #fff;
     font-size: 1.5em;
@@ -56,10 +58,12 @@ body {
     font-weight: 600;
     line-height: 1.4em;
 }
+/* Cambio de tamaño de letra y fuente */
 .profileText h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
+/* posicionar la imagen */
 .profileText .imgBox img{
     position: absolute;
     top: 0;
@@ -68,10 +72,11 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
+/* separacion de informacion con lo que esta arriba */
 .contactInfo {
     padding-top: 40px;
 }
+/* color de titulo y tamaño */
 .title {
     color: #fff;
     text-transform: uppercase;
@@ -82,34 +87,40 @@ body {
 .contactInfo ul {
     position: relative;
 }
+/* Se le da una separacion de cada info */
 .contactInfo ul li {
     position: relative;
     list-style: none;
     margin: 10px 0;
     cursor: pointer;
 }
+/* cambiar el color de fondo de los iconos */
 .contactInfo ul li .icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #03a9f4;
 }
+/* asignar color a los span de las listas */
 .contactInfo ul li span {
     color: #fff;
     font-weight: 300;
 }
+/* asignar color a los vinculos */
 .contactInfo ul li a {
     color: #fff;
     font-weight: 300;
 }
-
+/* tamaño de margen */
 .contactInfo.education li{
     margin-bottom: 15px;
 }
+/* color a la fecha y tipo de fuente*/
 .contactInfo.education h5{
     color: #03a9f4;
     font-weight: 500;
 }
+/* dar tamaño y color */
 .contactInfo.education h4:nth-child(2) {
     color: #fff;
     font-weight: 500;
@@ -119,35 +130,37 @@ body {
     font-weight: 300;
 }
 
-
-
+/* Contenedor derecho */
 .container .right_side {
     position: relative;
     background: #fff;
     padding: 40px;
 }
-
+/* acomodo de about */
 .about {
     margin-bottom: 50px;
 }
 .about:last-child{
     margin-bottom: 0;
 }
+/* formato a todos los title */
 .title2 {
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
+/* color a los parrafos */
 p {
     color: #333;
 }
-
+/* crear cuadro de texto para experiencia */
 .about .box {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
 }
+/* acomodar tamaño y posicion de compañia */
 .about .box .year-company{
     min-width: 150px;
 }
@@ -156,15 +169,17 @@ p {
     color: #848c90;
     font-weight: 600;
 }
+/* color de titulo de experiencia */
 .about .box .text h4 {
     text-transform: uppercase;
     color: #2a7da2;
     font-size: 16px;
 }
+/* mover todas las listas un 10% hacia la derecha */
 .about .box .text ul li {
     transform: translateX(10%);
 }
-
+/* cambia el tamaño de la lista de texto */
 .about .texto ul li {
     text-transform: uppercase;
     position: relative;
